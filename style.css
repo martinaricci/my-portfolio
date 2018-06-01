@@ -5,13 +5,18 @@
 body {
     margin: 0;
 }
+#entire-page {
+
+}
+
 .main-container {
     /* height: 100%; */
-    background-image: url("https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: cover;
+    background-image: url("IMG_4233.jpg");
+    background-size: 100%;
     height: 100%;
     background-repeat: no-repeat;
     text-size-adjust: 100%;
+    /* margin-top: -10%; */
 }
 
 .social-media-logo img {
@@ -45,14 +50,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 120vh;
     font-family: 'Raleway Dots',
     cursive;
+    margin-left: 40%;
 }
 
 .heading {
     font-family: 'Poiret One',
     cursive;
+    height: 250px;
 }
 
 .nav-container {
@@ -67,6 +74,9 @@ body {
     text-decoration: none;
     line-height: 60px;
     margin-left: 10px;
+    font-family: 'EB Garamond',
+    serif;
+    font-size: 200%;
 }
 
 .social-media-logo {
@@ -103,16 +113,11 @@ body {
     text-align: center;
     margin-top: 10%;
     font-size: 20px;
+    margin-top: 12%;
 }
 
 .arrow {
     text-align: center;
-}
-
-h2 {
-    background-color: gray;
-    height: 100%;
-    /* text-size-adjust: 100%; */
 }
 
 .mywork-container {
@@ -137,29 +142,43 @@ h2 {
     font-size: 340%;
 }
 
+.mywork-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .mywork-boxes li {
     border: 10px solid white;
-    height: 300px;
-    width: 27%;
-    /* margin: 10px; */
-    /* margin: 13px; */
-    /* margin-left: 20%;  */
+    width: 300px;
     padding: 13px;
-    display: inline-block;
-    /* vertical-align: top; */
     list-style-type: none;
-    background-color: lightgray;
 }
 
-.img1, .img2, .img3, .img4, .img5, .img6 {
-    background-image: url("https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+.mywork-boxes h2 {
+    margin: 0;
+    transform: translateY(-100px);
+    visibility: hidden;
+}
+
+.mywork-boxes li:hover h2 {
+    visibility: visible;
+    /* display: block; */
+}
+
+.mywork-boxes img:hover {
+    opacity: 0.3;
+}
+
+.mywork-boxes img {
+    width: 100%;
+    /* background-image: url("https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    text-align: center;
+    opacity: 1; */
+    /* text-align: center; */
     /* line-height: 50%; */
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 
@@ -183,12 +202,13 @@ h2 {
 .about-me {
     border: 4px solid black;
     width: 45%;
-    height: 40%;
+    height: 45%;
     float: right;
     margin-top: 11%;
     margin-right: 12%;
     /* text-align: center; */
-    line-height: 30px;
+    overflow: scroll;
+    line-height: 25px;
     padding: 70px 20px;
     color: black;
     font-family: 'Raleway Dots',
@@ -200,7 +220,7 @@ h2 {
     text-align: center;
     /* margin-top: 10%; */
     color: black;
-    font-family: 'Raleway Dots',
+    font-family: 'Courgette',
     cursive;
     letter-spacing: 7px;
 }
@@ -209,15 +229,15 @@ h2 {
     text-align: center;
     margin-top: 90px;
     color: red;
-    font-family: 'Poiret One',
-    cursive;
+   font-family: 'Courgette',
+   cursive;
     font-size: 150%;
 
 }
 
 .lang-icons-container {
-    border: 2px solid black;
-    width: 70%;
+    /* border: 2px solid black; */
+    width: 80%;
     height: 20%;
     margin-top: 20%;
     margin: 0 auto;
@@ -248,6 +268,9 @@ h3 {
     margin-top: 10%;
     border: 1px solid black;
     /* display: inline-block; */
+    background-image: url("https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    
 }
 
 .contact-me {
@@ -272,6 +295,9 @@ input {
     font-size: 20px;
     font-family: 'EB Garamond',
     serif;
+    border-radius: 30px;
+    padding: 10px;
+    outline: none;
 }
 
 textarea {
@@ -281,6 +307,9 @@ textarea {
     font-size: 20px;
     font-family: 'EB Garamond',
     serif;
+    border-radius: 30px;
+    padding: 10px;
+    outline: none;
 }
 
 button {
@@ -291,4 +320,5 @@ button {
     font-size: 20px;
     font-family: 'EB Garamond',
     serif;
+    outline: none;
 }
