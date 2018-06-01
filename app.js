@@ -9,18 +9,39 @@ console.log('hello')
 $(function () {
     var controller = new ScrollMagic.Controller();
 
-    var wipeAnimation = new TimelineMax()
-        .fromTo("section.mywork-container", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
-        .fromTo("section.aboutme-container", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
-        .fromTo("section.contact-container", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone});
+    // var wipeAnimation = new TimelineMax()
+        // .fromTo("section.panel.mywork-container", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+        // .fromTo("section.panel.contact-container", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone});
+        // .fromTo("section.aboutme-container", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+        // .fromTo("section.panel.aboutme-container", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone })
 
         new ScrollMagic.Scene({
-            triggerElement: "#entire-page",
-            triggerHook: "onLeave",
-            duration: "300%"
+            triggerElement: ".mywork-container",
+            // triggerHook: "onLeave",
+            duration: "500"
         })
-        .setPin("#entire-page")
-        .setTween(wipeAnimation)
+        .setPin(".mywork-container")
+        // .setTween(wipeAnimation)
         .addIndicators()
         .addTo(controller);
+
+    new ScrollMagic.Scene({
+            triggerElement: ".contact-container",
+            // triggerHook: "onLeave",
+            duration: "300"
+        })
+        .setPin(".contact-container")
+        // .setTween(wipeAnimation)
+        .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: ".aboutme-container",
+        // triggerHook: "onLeave",
+        duration: "300"
+    })
+        .setPin(".aboutme-container")
+        // .setTween(wipeAnimation)
+        .addIndicators()
+        .addTo(controller);        
 });

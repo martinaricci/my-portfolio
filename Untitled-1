@@ -10,11 +10,11 @@
 </head>
 <body>
     <div id="entire-page">
-        <section class="main-container">
+        <section class="main-container panel">
             <header class="site-header">
                 <nav class="nav-container">
                     <a href="#">work</a>
-                    <a href="#aboutme-container">about</a>
+                    <a href="#">about</a>
                     <a href="#">contact</a>
                 </nav>
                 <div class="logo-text">Martina Ricci</div>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
         </section>
-        <section class="mywork-container">
+        <section class="mywork-container panel">
             <h1 class="mywork-container-title">MY WORK</h1>
             <ul class="mywork-boxes">
                 <li>
@@ -83,7 +83,7 @@
                 </li>
             </ul>
         </section>
-        <section id="aboutme-container">
+        <section class="aboutme-container panel">
             <h4 class="who-i-am">Who am I?</h4>
             <h1 class="about-me-heading">About me</h1>
             <img class="mypicture" src="https://images.pexels.com/photos/904615/pexels-photo-904615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-container">
+        <!--section class="contact-container panel">
             <div class="contact-me">
                 <p>Get in touch!</p>
                 <form action="">
@@ -115,7 +115,7 @@
                     <button>Send</button>
                 </form>
             </div>
-        </section>
+        </section-->
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
@@ -124,8 +124,6 @@
     <script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <!-- <script src="plugins/animation.velocity.js"></script> -->
     <script src="plugins/debug.addIndicators.js"></script>
-    <!-- <script src="plugins/animation.gsap.js"></script> -->
-    <!-- <script src="plugins/ScrollMagic.Controller.js"></script> -->
 
 
 </body>
