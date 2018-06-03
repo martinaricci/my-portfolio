@@ -16,31 +16,31 @@ $(function () {
         // .fromTo("section.panel.aboutme-container", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone })
 
         new ScrollMagic.Scene({
-            triggerElement: ".mywork-container",
+            triggerElement: "#mywork-container",
             // triggerHook: "onLeave",
-            duration: "500"
+            duration: "200"
         })
-        .setPin(".mywork-container")
+        .setPin("#mywork-container")
         // .setTween(wipeAnimation)
         .addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
-            triggerElement: ".contact-container",
+            triggerElement: "#contact-container",
             // triggerHook: "onLeave",
-            duration: "300"
+            duration: "200"
         })
-        .setPin(".contact-container")
+        .setPin("#contact-container")
         // .setTween(wipeAnimation)
         .addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
-        triggerElement: ".aboutme-container",
+        triggerElement: "#aboutme-container",
         // triggerHook: "onLeave",
-        duration: "300"
+        duration: "200"
     })
-        .setPin(".aboutme-container")
+        .setPin("#aboutme-container")
         // .setTween(wipeAnimation)
         .addIndicators()
         .addTo(controller);        
