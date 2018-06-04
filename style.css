@@ -41,6 +41,7 @@ body {
     /* font-weight: bold; */
 }
 
+
 .site-header {
     /* background-color: lightgray; */
     background:rgba(255, 255, 255, 0.9);
@@ -63,12 +64,22 @@ body {
     font-family: 'Raleway Dots',
     cursive;
     margin-left: 40%;
+    /* padding-bottom: 70px; */
 }
 
 .heading {
     font-family: 'Poiret One',
     cursive;
     height: 250px;
+    border: 1px solid white;
+    margin: 120px 100px 0px 100px;
+    background:rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(#fff, #fff, #fff, 0.5); */
+    /* width: 650px; */
+    /* line-height: 20px; */
+    height: 25%;
+    padding: 30px;
+    text-align: center;
 }
 
 .nav-container {
@@ -107,17 +118,6 @@ body {
     font-size: 50px;
 }
 
-.heading {
-    border: 1px solid white;
-    margin: 120px 100px 0px 100px; 
-    background:rgba(255, 255, 255, 0.3);
-    /* background-color: rgba(#fff, #fff, #fff, 0.5); */
-    /* width: 650px; */
-    height: 20%;
-    padding: 30px;
-    text-align: center;
-}
-
 .scrolldown-text {
     text-align: center;
     margin-top: 10%;
@@ -137,7 +137,7 @@ body {
     position: relative;
     padding-bottom: 10%;
     text-align: center;
-
+    
 }
 
 .mywork-container-title {
@@ -182,8 +182,12 @@ body {
 }
 
 .mywork-boxes img:hover {
-    opacity: 0.2;
+    opacity: 0;
 }
+
+/* .mywork-boxes h2:hover {
+    opacity: 0;
+} */
 
 .mywork-boxes img {
     width: 100%;
@@ -251,7 +255,7 @@ body {
     font-family: 'Courgette',
     cursive;
     font-size: 150%;
-
+    
 }
 
 .lang-icons-container {
@@ -273,12 +277,17 @@ h3 {
 }
 
 .lang-icons img {
-    border: 1px solid white;
-    width: 8%;
+    /* border: 1px solid black; */
+    width: 6%;
     justify-content: space-between;
-    height: 8vh;
+    height: 60px;
     display: inline-block;
     margin: 10px;
+    /* text-align: center; */
+}
+
+.lang-icons {
+    text-align: center;
 }
 
 #contact-container {
@@ -342,4 +351,202 @@ button {
     font-family: 'EB Garamond',
     serif;
     outline: none;
+}
+
+@media (max-width: 375px) {
+    .heading-message {
+        margin: 0;
+    }
+}
+
+@media (max-width: 910px) {
+    .heading {
+        font-size: 10px;
+        margin: 30px 10px;
+    }
+}
+
+@media (max-width: 617px) {
+    .heading {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 807px) {
+    .heading {
+        font-size: 20px;
+        /* margin: -75px 35px 88px 35px; */
+        /* margin: 0 auto; */
+        /* width: 390px; */
+        /* float: left; */
+    }
+}
+
+@media (max-width: 375px) {
+    .heading {
+        height: 175px;
+
+        /* width: 190%; */
+        /* margin-top: 1px; */
+        /* float: left; */
+        /* margin: 0 auto; */
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 693px) {
+    .logo-text {
+        font-size: 30px;
+        /* text-align: center; */
+        /* margin-bottom: 20px; */
+    }
+}
+
+@media (max-width: 595px) {
+    .logo-text {
+        font-size: 17px;
+        margin: -8 10px 0 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .nav-container a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-logo img {
+        width: 20px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-logo li {
+       margin: 1px 0px 0px 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .scrolldown-text {
+        visibility: hidden;
+        font-size: 100%;
+        margin-top: -50%;
+    }
+}
+
+@media (max-width: 716px) {
+    .scrolldown-text {
+        /* visibility: hidden; */
+        font-size: 100%;
+        /* margin-top: -190%; */
+    }
+}
+
+@media (max-width: 803px) {
+    .arrow img {
+        width: 40px;
+        /* margin-top: 50%; */
+    }
+}
+
+@media (max-width: 375px) {
+    .arrow img {
+        visibility: hidden;
+        /* width: 40px; */
+        /* margin-top: 50%; */
+    }
+}
+
+@media (max-width: 375px) {
+    .mywork-boxes {
+        height: 120%;
+        /* justify-content: center; */
+    }
+}
+
+@media (max-width: 375px) {
+    .about-me {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+    .lang-icons img {
+        width: 6%;
+    }
+}
+
+@media (max-width: 375px) {
+    .lang-icons-container {
+        /* height:  */
+    }
+}
+
+@media (max-width: 375px) {
+    .site-header {
+        height: 55px;
+    }
+}
+
+@media (max-width: 375px) {
+    .mywork-boxes h2 {
+        visibility: visible;
+        color: white;
+        text-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
+    }
+}
+
+@media (max-width: 375px) {
+    .mypicture {
+        width: 88%;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-me {
+        width: 74%;
+        height: 57%;
+    }
+}
+
+@media (max-width: 375px) {
+    .scrollmagic-pin-spacer {
+        /* min-height: 1778px; */
+    }
+}
+
+@media (max-width: 375px) {
+    #contact-container {
+        margin: 300px auto 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .lang-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    input, textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+    button {
+        width: 18%;
+        margin-left: 17%;
+    }
 }
