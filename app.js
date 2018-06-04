@@ -7,7 +7,7 @@ console.log('hello')
 // })
 
 $(function () {
-    var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller()
 
     // var wipeAnimation = new TimelineMax()
         // .fromTo("section.panel.mywork-container", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
@@ -45,3 +45,20 @@ $(function () {
         .addIndicators()
         .addTo(controller);        
 });
+
+
+// globalSceneOptions: {
+//     triggerHook: 'onLeave'
+// }
+// });
+
+// var slides = document.querySelectorAll("section.#panel");
+//     for (var i=0; i<slides.length; i++) {
+//         new ScrollMagic.Scene({
+//             triggerElement: slides[i]
+//         })
+//         .setPin(slides[i])
+//         .addIndicators()
+//         .addTo(controllers);
+//     }
+// });
