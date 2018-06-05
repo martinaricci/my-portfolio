@@ -112,10 +112,10 @@
         <section id="contact-container">
             <div class="contact-me">
                 <p>Get in touch!</p>
-                <form action="/contact-me">
-                    <input type="text" placeholder="Your name..."></br>
-                    <input type="text" placeholder="Your email address..."></br>
-                    <textarea placeholder="Your message..."></textarea></br>
+                <form id="contact-me" action="/contact-me" method="post">
+                    <input name='name' type="text" placeholder="Your name..."></br>
+                    <input name='email' type="text" placeholder="Your email address..."></br>
+                    <textarea name='message' placeholder="Your message..."></textarea></br>
                     <button>Send</button>
                 </form>
             </div>

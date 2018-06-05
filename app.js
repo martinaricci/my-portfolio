@@ -62,3 +62,14 @@ $(function () {
 //         .addTo(controllers);
 //     }
 // });
+
+$('form#contact-me').submit(function(e) {
+    e.preventDefault()
+    let qs = $(this).serialize()
+    $.ajax({
+        url: 'http://localhost:4567/contact-me?' + qs,
+        method: 'post'
+    }).done(function(data) {
+        $('div.contact-me').html('<p>Thank you for getting in touch!</p>')
+    })
+})
